@@ -25,18 +25,38 @@ console.log(isEven(3));
 // countChars //////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-function countChars() {
-
+function countChars(string, char) {
+output = 0;
+for(var i = 0; i < string.length; i++){
+  if (string[i] === char) {
+    output++;
+  }
 }
+return output;
+}
+console.log(countChars('together', 't'));
+console.log(countChars('beepbeepboop', 'e'));
 
 ////////////////////////////////////////////////////////////////////////////////
 // countBs /////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-function countBs() {
-
+/*Write a function called countBs 
+that takes a string as its only argument and 
+returns a number that indicates how many uppercase B characters there are in the string.
+*/
+function countBs(string) {
+  output = 0;
+for (var i = 0; i < string.length; i++){
+  if (string[i] === 'B') {
+    output++;
+  }
 }
-
+return output;
+}
+console.log(countBs('I need a Big, Bold, Bat'));
+console.log(countBs('Be not afraid, I cant Believe you'));
+console.log(countBs('keep going'));
 ////////////////////////////////////////////////////////////////////////////////
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
