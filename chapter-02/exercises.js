@@ -26,10 +26,17 @@ LOGS =>
 
 */
 
-function triangles() {
-  
+function triangles(number) {
+  for (var i = 1; i <= number; i++){
+    var place = '';
+    for (var t = 1; t <= i; t++){
+      place = place + '#';
+    }
+console.log(place)
+  }
 }
-
+console.log(triangles(3));
+console.log(triangles(7));
 
 ////////////////////////////////////////////////////////////////////////////////
 // fizzBuzz ////////////////////////////////////////////////////////////////////
