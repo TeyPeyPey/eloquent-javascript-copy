@@ -99,9 +99,21 @@ LOGS =>
 */
 
 function drawChessboard(x) {
-
-
+output = '';
+for (var i = 0; i < x; i++){
+  var row = '';
+  for (var t = 0; t < x; t++){
+    if ((i + t) % 2 === 0){
+      row = row + ' ';
+    } else {
+      row = row + '#';
+    }
+  }
+  output = output + row + '\n';
 }
+console.log(output);
+}
+console.log(drawChessboard(8));
 
 ////////////////////////////////////////////////////////////////////////////////
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
